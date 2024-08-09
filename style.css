@@ -3,55 +3,76 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    /* background-color: #01411C; */
 }
 
 .calculator {
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); */
+    box-shadow: 10px 10px 5px black;
+    /* background: linear-gradient(to right, blue, green, yellow); */
 }
 
-.calculator-screen {
-    width: 100%;
-    height: 80px;
+.screen {
+    width: 340px;
+    height: 90px;
     border: none;
-    background-color: #252525;
+    background-color: black;
     color: #fff;
     text-align: right;
     padding: 0 20px;
     font-size: 2.5rem;
+    
+    border-bottom: 3px solid #98FB98;
+    
 }
 
-.calculator-keys {
+.keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-    background-color: #252525;
+    gap: 8px;
+    /* background-color: black; */
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
 }
 
 button {
-    height: 80px;
+    height: 90px;
     border: none;
-    background-color: white;
+    /* background-color: white; */
     font-size: 1.5rem;
+    /* border-radius: 50% */
 }
 
 button.operator {
-    background-color: #f5923e;
+    background: linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);;
     color: white;
+    border-radius: 50%;
 }
-
-button.equal-sign {
-    background-color: #2e86de;
+.white {
+    border-radius: 50%;
+    /* background-color: #6B8E23; */
+    background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+}
+.equal {
+    background-color: #98FB98;
     grid-column: span 4;
+
 }
 
-button.all-clear {
-    background-color: #f0595f;
+button.clear {
+    /* background-color: red; */
+    background: radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%);
     color: white;
+    border-radius: 50%;
 }
 
 button:active {
     background-color: #d9d9d9;
+}
+
+.decimal {
+    border-radius: 50%;
+    background: linear-gradient(to right, #c1c161 0%, #c1c161 0%, #d4d4b1 100%);
 }
